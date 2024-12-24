@@ -1,19 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View,ScrollView } from 'react-native';
 import { PaperProvider,Text,Divider } from 'react-native-paper';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import Home from './components/Home';
 
 export default function App() {
   return (
     <PaperProvider>
+      <SafeAreaView>
+     
+      <ScrollView>
       <View style={styles.container}>
-        <Text varient="headingLarge">Heading Large</Text>
-        <Text varient="bodyMedium" style={styles.body}>You are beautiful You are beautiful You are beautiful You are beautiful
-        You are beautiful You are beautiful You are beautiful You are beautiful You are beautiful You are beautiful You are beautiful You are beautiful 
-        You are beautiful You are beautiful You are beautiful You are beautiful You are beautiful You are beautiful You are beautiful You are beautiful
-        You are beautiful You are beautiful You are beautiful
-        </Text>
+        <Home/>
         <StatusBar style="auto" />
       </View>
+      </ScrollView>
+      </SafeAreaView>
     </PaperProvider>
   );
 }
@@ -24,9 +26,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  body:{
-    padding:5,
-    textAlign:'justify'
   }
+  
 });
