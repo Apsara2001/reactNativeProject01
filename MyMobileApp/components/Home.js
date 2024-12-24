@@ -3,7 +3,7 @@ import { Text,Divider,Button} from 'react-native-paper';
 export default function Home(){
     return(
         <>
-         <Text varient="headingLarge">Heading Large</Text>
+         <Text varient="headlineLarge">Heading Large</Text>
         <Divider/>
         <Text varient="bodyMedium" style={styles.body}>You are beautiful You are beautiful You are beautiful You are beautiful
         You are beautiful You are beautiful You are beautiful You are beautiful You are beautiful You are beautiful You are beautiful You are beautiful 
